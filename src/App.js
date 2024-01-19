@@ -10,7 +10,7 @@ function App() {
       const data = await response.json();
       setCountries(data);
     } catch (error) {
-      console.log(error.message);
+      console.err(error);
     }
   };
   useEffect(() => {
